@@ -1,0 +1,7 @@
+.vscode/
+_gulp/node_modules/
+_gulp/package-lock.json/
+/.DS_Store/
+dist
+src/wp-theme/assets
+.DS_Store

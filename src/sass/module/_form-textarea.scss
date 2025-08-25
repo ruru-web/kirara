@@ -1,0 +1,19 @@
+@use 'global' as *;
+
+.form-textarea textarea {
+    padding: prem(8) prem(15);
+    width: 100%;
+    height: prem(150);
+    font-size: prem(15);
+    border-radius: 0;
+    border: 1px solid #ccc;
+    appearance: none;
+    background-color: transparent;
+    background-image: none;
+}
+
+.form-textarea textarea:focus {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    outline: none;
+}

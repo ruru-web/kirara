@@ -1,0 +1,43 @@
+@use 'global' as *;
+
+.form-submit input,
+.contact__thanks-button {
+    padding: prem(25) prem(125);
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    font-size: prem(16);
+    line-height: 1;
+    background-color: #C5AE66;
+    background-image: none;
+    border: none;
+    border-radius: 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+    text-transform: uppercase;
+    text-align: center;
+
+
+    @include mq('md') {
+        padding: rem(31) rem(100);
+        max-width: rem(373);
+        width: 100%;
+    }
+}
+
+.form-submit input:hover,
+.form-submit input:focus {
+    outline: none;
+}
+
+.form-submit input:hover {
+    @include mq(md){
+        opacity: .8;
+    }
+}
+
+.form-submit input::-moz-foucus-inner {
+    padding: 0;
+    border: none;
+}
