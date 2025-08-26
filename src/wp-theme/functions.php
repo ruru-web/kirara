@@ -105,7 +105,7 @@ function my_script_init()
   // Google Fonts
   wp_enqueue_style(
     'google-fonts',
-    'https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet',
+    'https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap',
     array(),
     null
   );

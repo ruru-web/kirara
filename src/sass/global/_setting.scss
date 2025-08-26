@@ -16,56 +16,48 @@ $padding-sp: 60px;
 // フォント設定
 ////////////////////
 
-// Noto Sans JP
+// Zen Kaku Gothic New
+// Regular
 @font-face {
   font-display: swap;
   font-weight: 400;
   font-style: normal;
-  font-family: "Noto Sans JP";
-  src: url("../fonts/NotoSansJP-Regular.woff") format("woff");
+  font-family: "Zen Kaku Gothic New";
+  src: url("../fonts/ZenKakuGothicNew-Regular.woff2") format("woff2"),
+       url("../fonts/ZenKakuGothicNew-Regular.woff") format("woff");
 }
 
-@font-face {
-  font-display: swap;
-  font-weight: 500;
-  font-style: normal;
-  font-family: "Noto Sans JP";
-  src: url("../fonts/NotoSansJP-Medium.woff") format("woff");
-}
-
+// Bold
 @font-face {
   font-display: swap;
   font-weight: 700;
   font-style: normal;
-  font-family: "Noto Sans JP";
-  src: url("../fonts/NotoSansJP-Bold.woff") format("woff");
+  font-family: "Zen Kaku Gothic New";
+  src: url("../fonts/ZenKakuGothicNew-Bold.woff2") format("woff2"),
+       url("../fonts/ZenKakuGothicNew-Bold.woff") format("woff");
 }
 
-// Noto Serif JP
+// Black
 @font-face {
   font-display: swap;
-  font-weight: 500;
+  font-weight: 900;
   font-style: normal;
-  font-family: "Noto Serif JP";
-  src: url("../fonts/NotoSerifJP-Medium.woff") format("woff");
+  font-family: "Zen Kaku Gothic New";
+  src: url("../fonts/ZenKakuGothicNew-Black.woff2") format("woff2"),
+       url("../fonts/ZenKakuGothicNew-Black.woff") format("woff");
 }
 
-@font-face {
-  font-display: swap;
-  font-weight: 700;
-  font-style: normal;
-  font-family: "Noto Serif JP";
-  src: url("../fonts/NotoSerifJP-Bold.woff") format("woff");
-}
 
-$base-font: "Noto Serif JP", sans-serif;
-$en-font: "Lora", sans-serif;
-$bebas: "Bebas Neue", sans-serif;
+
+
+$base-font: "Zen Kaku Gothic New", sans-serif;
+// $en-font: "Lora", sans-serif;
+// $bebas: "Bebas Neue", sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 // フォントウェイト
 $regular: 400;
-$medium: 500;
+// $medium: 500;
 $semi-bold: 600;
 $bold: 700;
 
@@ -74,14 +66,19 @@ $bold: 700;
 ////////////////////
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
-$black: #333;
+$black: #1a1a1a;
+$black2: #595858;
+$black3: #000;
 $white: #fff;
-$base: #5d5d5d;
-$blue: #391e88;
-$bg-black: #120e19;
+$blown: #534741;
+$blue: #64a5dd;
+$red: #c0272d;
+$yellow: #dc950f;
+$yellow2: #f2d653;
+$bg-yellow: #fff3a8;
+$base: #3f3c3c;
 
 body {
   font-family: $base-font;
   color: $base;
-  background: #000;
 }
