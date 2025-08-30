@@ -1,0 +1,101 @@
+@use "global" as *;
+
+.features-card {
+  padding: rem(16) rem(17) rem(48);
+  max-width: rem(365);
+  background-color: $bg-yellow;
+  border-radius: rem(31);
+}
+
+.features-card__image {
+  // padding-top: 10px;
+  aspect-ratio: 302/302;
+  max-width: rem(302);
+  width: 100%;
+  // border-radius: 31px;
+  margin-inline: auto;
+}
+
+.features-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: rem(20);
+}
+
+.features-card__wrap {
+  margin-top: rem(10);
+	margin-left: rem(10);
+	// max-width: 302px;
+  display: flex;
+	// flex-direction: column;
+	align-items: center;
+	// justify-content: center;
+	text-align: center;
+	max-width: rem(310);
+	gap: rem(10);
+}
+
+.features-card__number {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	padding-bottom: rem(8);
+  // position: absolute;
+  // top: 16px;
+  // left: 16px;
+  font-size: rem(36);
+  line-height: calc(36 / 36);
+  // letter-spacing: normal;
+  font-weight: $bold;
+  color: $white;
+  background-color: $blue;
+  width: rem(54);
+  height: rem(54);
+  border-radius: 50%;
+  // text-align: center;
+
+}
+
+
+.features-card__title-wrap {
+	flex: 1; /* 数字を除いた残りの幅を占める */
+  display: flex;
+  justify-content: center; /* ←この中で中央揃え */
+}
+
+
+
+.features-card__title {
+  font-size: rem(32);
+  line-height: calc(36 / 32);
+  font-weight: $bold;
+	letter-spacing: -0.04em;
+	text-align: center;
+  color: $blue;
+	justify-content: center;
+}
+
+/* 2枚目（黄色） */
+.features-cards__item:nth-child(2) .features-card__number{
+	background-color: $yellow;
+}
+.features-cards__item:nth-child(2) .features-card__title {
+  color: $yellow;
+}
+
+/* 3枚目（赤） */
+.features-cards__item:nth-child(3) .features-card__number {
+	background-color: $red;
+}
+.features-cards__item:nth-child(3) .features-card__title {
+  color: $red;
+}
+
+.features-card__text {
+	margin-top: rem(30);
+  font-size: rem(20);
+  line-height: calc(30 / 20);
+  font-weight: $bold;
+	letter-spacing: -0.05em;
+}

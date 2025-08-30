@@ -1,0 +1,27 @@
+@use 'global' as *;
+
+.top-worries {
+
+}
+
+.top-worries__inner {
+
+}
+
+.top-worries__title {
+	
+}
+
+.top-worries__image {
+	margin-top: rem(32);
+	margin-inline: auto;
+	max-width: rem(1045);
+	width: 100%;
+	aspect-ratio: 1046/776;
+}
+
+.top-worries__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

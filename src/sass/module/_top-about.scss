@@ -1,0 +1,116 @@
+@use "global" as *;
+
+.top-about {
+  padding-top: rem(76);
+  padding-bottom: rem(104);
+  background-image: url(../images/common/bg-white.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.top-about__container {
+  margin-top: rem(32);
+  margin-inline: auto;
+  max-width: rem(1100);
+}
+
+.top-about__wrap {
+  padding-right: rem(56);
+  display: flex;
+  gap: rem(40);
+  justify-content: space-between;
+}
+
+.top-about__text {
+  width: 40.19%;
+  font-size: rem(26);
+  line-height: calc(40 / 26);
+  letter-spacing: normal;
+  font-weight: $bold;
+  color: $black;
+}
+
+.top-about__image {
+  margin-top: rem(30);
+  width: 55.523%;
+  aspect-ratio: 580/352;
+}
+
+.top-about__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: rem(25);
+}
+
+.top-about__support-text {
+  margin-top: rem(45);
+  // width: fit-content;
+  font-size: rem(27.6);
+  line-height: calc(33.15 / 27.62);
+  font-weight: $bold;
+  letter-spacing: normal;
+}
+
+.top-about__support-list {
+  margin-top: rem(32);
+  padding-right: rem(50);
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+
+  @include mq("md") {
+    flex-direction: column;
+  }
+}
+
+.top-about__support-row {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: nowrap;
+
+  @include mq("md") {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.top-about__support-row--first,
+.top-about__support-row--second {
+  @include mq("md") {
+    justify-content: center;
+  }
+}
+
+.top-about__support-item {
+  width: rem(196);
+  height: rem(196);
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+
+  @include mq("md") {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.top-about__support-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.top-about__note {
+  margin-top: rem(104);
+	padding-right: rem(50);
+  text-align: center;
+  font-size: rem(31);
+  line-height: calc(37 / 31);
+  font-weight: $bold;
+  letter-spacing: -0.05em;
+}
+
+

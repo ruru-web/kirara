@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.button {
+  display: inline-block;
+  align-items: center;
+  background-color: #f2d653;
+  color: #000;
+  border-radius: rem(8.5);
+  font-size: rem(32);
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  width: rem(495);
+  height: rem(72);
+  padding: rem(20);
+  overflow: hidden;
+  z-index: 1;
+	transition: background-color 1s, color 1s;
+}
+
+.button:hover {
+  color: $yellow2;
+  background-color: $black;
+}

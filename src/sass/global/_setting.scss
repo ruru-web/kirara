@@ -4,12 +4,12 @@
 // インナー幅設定
 ////////////////////
 // コンテンツのインナー幅（最も共通の幅が多い部分）
-$inner: 960px;
+$inner: 1190px;
 // ※キャンパス幅ではなくインナーの幅を指す
 
 // 余白
 $padding-pc: 25px;
-$padding-sp: 60px;
+$padding-sp: 15px;
 // ※PC時：デザインカンプの余白の幅ではない。PC時は通常25pxで大丈夫！
 
 ////////////////////
@@ -70,7 +70,7 @@ $black: #1a1a1a;
 $black2: #595858;
 $black3: #000;
 $white: #fff;
-$blown: #534741;
+$brown: #534741;
 $blue: #64a5dd;
 $red: #c0272d;
 $yellow: #dc950f;
@@ -81,4 +81,8 @@ $base: #3f3c3c;
 body {
   font-family: $base-font;
   color: $base;
+  background-image: url(../images/common/bg-star1.png);
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  background-position: top left;
 }

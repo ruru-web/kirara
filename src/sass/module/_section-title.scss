@@ -1,0 +1,31 @@
+@use 'global' as *;
+.section-title {
+	position: relative;
+	text-align: center;
+
+	font-size: rem(44);
+	line-height: calc(77/44);
+	font-weight: $bold;
+	letter-spacing: -0.02em;
+	color: $brown;
+}
+
+.section-title::after {
+	content: "";
+	display: block;
+	// width: 120px;
+	max-width: 570px;
+	height: 10px;
+	margin: 8px auto 0;
+	// background-image: repeating-linear-gradient(
+	// 	to right,
+	// 	#f4c13c 0,
+	// 	#f4c13c 6px,
+	// 	transparent 6px,
+	// 	transparent 12px
+	// );
+	background-image: radial-gradient(circle, #f2d653 5px, transparent 5px);
+  background-position: left -13px bottom;
+  background-repeat: repeat-x;
+  background-size: 37px 10px
+}

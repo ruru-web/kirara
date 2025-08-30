@@ -1,0 +1,41 @@
+@use 'global' as *;
+
+.top-mv {
+	// min-height: rem(400);
+	// background-image: url(../images/common/mv.png);
+	// background-repeat: no-repeat;
+	// background-position: left;
+	// background-size: cover;
+	// position: relative;
+	width: 100%;
+	height: 100vh;
+
+}
+
+.top-mv__container {
+	position: relative;
+	width: 82.604%;
+	height: 100%;
+
+}
+
+.top-mv__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+.top-mv__title {
+  position: absolute;
+  top: 30%;
+  left: 57%;
+  // transform: translate(-50%, -50%);
+  color: white;
+  // text-align: center;
+	
+	font-size: rem(36);
+  line-height: 1.75;
+	letter-spacing: 0.01rem;
+	font-weight: $bold;
+}

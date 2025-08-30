@@ -42,54 +42,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
 
-  //ドロワーメニュー
-  $(".js-hamburger").click(function () {
-    if ($('.js-hamburger').hasClass('is-active')) {
-      $('.js-hamburger').removeClass("is-active");
-      // $("html").toggleClass("is-fixed");
-      $(".js-sp-nav").fadeOut(300);
-    } else {
-      $('.js-hamburger').addClass("is-active");
-      // $("html").toggleClass("is-fixed");
-      $(".js-sp-nav").fadeIn(300);
-    }
-  });
 
-
-  // ドロワーメニューが開いた時に後ろがスクロールしないようにする
-  $(function () {
-    // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
-    $(".js-hamburger").click(function () {
-    // 現在のbodyタグのoverflowスタイルを確認
-    if ($("body").css("overflow") === "hidden") {
-        // もしoverflowがhiddenなら、bodyのスタイルを元に戻す
-        $("body").css({
-        height: "",
-        overflow: ""
-        });
-    } else {
-        // そうでなければ、bodyにheight: 100%とoverflow: hiddenを設定し、スクロールを無効にする
-        $("body").css({
-        height: "100%",
-        overflow: "hidden"
-        });
-    }
-    });
-  });
-
-  // ドロワーナビのaタグをクリックで閉じる
-  $(".js-drawer a[href]").on("click", function () {
-    $(".js-hamburger").removeClass("is-open");
-    $(".js-drawer").fadeOut();
-  });
-  
-  // resizeイベント
-  $(window).on('resize', function() {
-    if (window.matchMedia("(min-width: 768px)").matches) {
-        $(".js-hamburger").removeClass("is-open");
-        $(".js-drawer").fadeOut();
-    }
-  });
 
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
@@ -245,3 +198,24 @@ const openingAnimKeyframes = (content) => [
     opacity: 1,
   },
 ];
+
+//吹き出しをふわっと表示
+document.addEventListener("DOMContentLoaded", function () {
+  const fadeElems = document.querySelectorAll(".js-fade-slide");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target); // 1回だけ表示で停止
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+    }
+  );
+
+  fadeElems.forEach((el) => observer.observe(el));
+});

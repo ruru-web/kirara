@@ -1,0 +1,107 @@
+@use "global" as *;
+
+.top-features {
+}
+
+.top-features__text {
+  margin-top: rem(32);
+  font-size: rem(30.7);
+  line-height: calc(37.3 / 30.7);
+  font-weight: $bold;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.top-features__wrap {
+  margin-top: rem(42);
+  position: relative;
+  // width: fit-content;
+  max-width: rem(600);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.top-features__bubbles {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: rem(36);
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.top-features__bubble {
+  width: rem(173);
+  height: auto;
+}
+
+.top-features__bubble:nth-child(1) {
+  padding-top: rem(30);
+}
+
+.top-features__bubble:nth-child(2) {
+  // height: 250px;
+  padding-bottom: rem(30);
+}
+
+.top-features__bubble:nth-child(3) {
+  padding-bottom: rem(10);
+}
+
+.top-features__image {
+  padding-top: rem(263);
+  aspect-ratio: 354/415;
+  max-width: rem(415);
+  width: 100%;
+  margin-inline: auto;
+}
+
+.aspect-ratio__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// @keyframes floatUpDown {
+//   0% { transform: translateY(0); }
+//   50% { transform: translateY(-10px); }
+//   100% { transform: translateY(0); }
+// }
+
+// .js-floating img {
+//   animation: floatUpDown 3s ease-in-out infinite;
+// }
+
+// @keyframes fadeSlideIn {
+//   0% {
+//     opacity: 0;
+//     transform: translateY(-20px);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
+
+// .js-fade-slide {
+//   opacity: 0;
+//   transform: translateY(-20px);
+//   transition: opacity 0.6s ease, transform 0.6s ease;
+// }
+
+// .js-fade-slide.is-visible {
+//   animation: fadeSlideIn 0.8s forwards;
+// }
+
+.top-features__cards {
+	margin-top: rem(50);
+  max-width: rem(1113);
+  margin-inline: auto;
+}
+
+.top-features__button-wrap {
+  margin-top: rem(40);
+  text-align: center;
+}
