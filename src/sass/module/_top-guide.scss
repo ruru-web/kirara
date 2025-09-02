@@ -1,9 +1,37 @@
-@use 'global' as *;
+@use "global" as *;
 
 .top-guide {
-	background-color: #fff;
+  position: relative;
+  padding-bottom: rem(208);
+}
+
+.top-guide__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.top-guide::before {
+  content: "";
+  position: absolute;
+  inset: 0; //全画面
+  padding-bottom: rem(208);
+  background-image: url(../images/common/bg-star2.png);
+  // background-image: url(../images/common/back01.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-bottom: rem(208);
+
+  mask-image: url(../images/common/bg-star2-mask.png);
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  mask-position: top left;
 }
 
 .top-guide__title {
-	margin-top: 109px;
+  padding-top: rem(88);
+}
+
+.top-guide__items {
+  margin-top: rem(66);
 }

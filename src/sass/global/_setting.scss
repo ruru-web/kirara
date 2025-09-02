@@ -24,7 +24,7 @@ $padding-sp: 15px;
   font-style: normal;
   font-family: "Zen Kaku Gothic New";
   src: url("../fonts/ZenKakuGothicNew-Regular.woff2") format("woff2"),
-       url("../fonts/ZenKakuGothicNew-Regular.woff") format("woff");
+    url("../fonts/ZenKakuGothicNew-Regular.woff") format("woff");
 }
 
 // Bold
@@ -34,7 +34,7 @@ $padding-sp: 15px;
   font-style: normal;
   font-family: "Zen Kaku Gothic New";
   src: url("../fonts/ZenKakuGothicNew-Bold.woff2") format("woff2"),
-       url("../fonts/ZenKakuGothicNew-Bold.woff") format("woff");
+    url("../fonts/ZenKakuGothicNew-Bold.woff") format("woff");
 }
 
 // Black
@@ -44,11 +44,8 @@ $padding-sp: 15px;
   font-style: normal;
   font-family: "Zen Kaku Gothic New";
   src: url("../fonts/ZenKakuGothicNew-Black.woff2") format("woff2"),
-       url("../fonts/ZenKakuGothicNew-Black.woff") format("woff");
+    url("../fonts/ZenKakuGothicNew-Black.woff") format("woff");
 }
-
-
-
 
 $base-font: "Zen Kaku Gothic New", sans-serif;
 // $en-font: "Lora", sans-serif;
@@ -69,6 +66,8 @@ $bold: 700;
 $black: #1a1a1a;
 $black2: #595858;
 $black3: #000;
+$gray: #b2b2b2;
+$gray2: #666;
 $white: #fff;
 $brown: #534741;
 $blue: #64a5dd;
@@ -81,7 +80,8 @@ $base: #3f3c3c;
 body {
   font-family: $base-font;
   color: $base;
-  background-image: url(../images/common/bg-star1.png);
+  background-image: url(../images/common/bg-star-1.jpg);
+  // background-image: url(../images/common/back02.jpg);
   background-size: 100% auto;
   background-repeat: repeat-y;
   background-position: top left;

@@ -35,6 +35,7 @@
 .top-features__bubble {
   width: rem(173);
   height: auto;
+  flex-shrink: 0;
 }
 
 .top-features__bubble:nth-child(1) {

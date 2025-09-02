@@ -1,0 +1,7 @@
+@use 'global' as *;
+
+.guide-list {
+  display: flex;
+  flex-direction: column;
+  gap: rem(45);
+}

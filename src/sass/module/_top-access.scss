@@ -1,0 +1,101 @@
+@use 'global' as *;
+
+.top-access {
+	padding-top: 140px;
+	background-image: url(../images/common/bg-white2.png);
+	background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.top-access__map {
+	margin-top: 36px;
+	max-width: 1120px;
+
+	position: relative;
+	width: 100%;
+	padding-top: 42.2836%;
+	// アスペクト比(高さ474/横1121 * 100%)
+	height: 0;
+	background-color: $gray;
+
+	@include mq("md") {
+		// padding-top: 54.21245%;
+		// アスペクト比(高さ148/横273 * 100%)
+		// width: 100%;
+	}
+}
+
+.top-access__map iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.top-access__wrap {
+	margin-top: rem(60);
+	display: flex;
+	gap: rem(35);
+}
+
+
+
+
+
+.top-access__logo {
+	// max-width: rem(348);
+	// width: 100%;
+	// width: 348px;
+	// aspect-ratio: 348/86;
+}
+
+.top-access__logo {
+	width: 348px;
+	height: 86px;
+}
+
+
+.top-access__address {
+	font-size: rem(24);
+	line-height: calc(36/24);
+	font-weight: $bold;
+	letter-spacing: -0.04em;
+	color: $black;
+}
+
+.top-access__item {
+	display: flex;
+}
+
+.top-access__term {
+	font-size: rem(24);
+	line-height: 1;
+	font-weight: $bold;
+	letter-spacing: -0.04em;
+	color: $black;
+	background-color: $yellow2;
+}
+.top-access__decs {
+	font-size: rem(20);
+	line-height: calc(36/20);
+	font-weight: $bold;
+	letter-spacing: -0.04em;
+	color: $black;
+}
+
+
+
+.top-access__image {
+	max-width: rem(620);
+	width: 100%;
+	aspect-ratio: 620/447;
+}
+
+.top-access__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

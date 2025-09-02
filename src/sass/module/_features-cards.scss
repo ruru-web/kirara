@@ -1,6 +1,7 @@
 @use 'global' as *;
 
 .features-cards {
-	display: flex;
-	gap: 8px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: rem(8);
 }

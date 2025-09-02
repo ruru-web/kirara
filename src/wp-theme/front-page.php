@@ -101,6 +101,7 @@
 	<section class="top-features top-features-layout">
 		<div class="top-features__inner inner">
 			<div class="top-features__title section-title">
+				<!-- kid’sキララ3つの特徴 -->
 				kid’sキララ3つの特徴
 			</div>
 			<p class="top-features__text">
@@ -125,10 +126,6 @@
 						alt="星のキャラクター">
 				</div>
 			</div>
-
-
-
-
 
 			<div class="top-features__cards features-cards">
 				<!-- カード1枚目 -->
@@ -240,6 +237,22 @@
 					</p>
 
 				</li>
+				<li class="guide-list__item guide-item">
+					<h3 class="guide-item__title">料金</h3>
+					<p class="guide-item__text">
+						テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+					</p>
+
+				</li>
+				<li class="guide-list__item guide-item">
+					<h3 class="guide-item__title">入所の流れ</h3>
+					<p class="guide-item__text">
+						テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+					</p>
+
+				</li>
 			</ul>
 
 
@@ -250,6 +263,149 @@
 
 		</div>
 	</section>
+
+	<section class="top-facility top-facility-layout">
+		<div class="top-facility__inner inner">
+			<div class="top-facility__info">
+				<h2 class="top-facility__title section-title">
+					施設案内
+				</h2>
+
+				<div class="top-facility__list">
+
+
+					<dl class="top-facility__term">
+						<dt>設置・運営団体</dt>
+						<dd>合同会社 kid’s キララ</dd>
+					</dl>
+					<dl class="top-facility__term">
+						<dt>所在地</dt>
+						<dd>〒880-2104 宮崎市浮田１０３２－１</dd>
+					</dl>
+					<dl class="top-facility__term">
+						<dt>TEL</dt>
+						<dd>080-5267-1381</dd>
+					</dl>
+					<dl class="top-facility__term">
+						<dt>支援内容</dt>
+						<dd>放課後等デイサービス</dd>
+					</dl>
+					<dl class="top-facility__term">
+						<dt>定員</dt>
+						<dd>10名</dd>
+					</dl>
+					<dl class="top-facility__term">
+						<dt>対象年齢</dt>
+						<dd>小学1年生〜高校3年生</dd>
+					</dl>
+					<dl class="top-facility__term">
+						<dt>職員構成</dt>
+						<dd>管理者1名、児童発達支援管理責任者1名、児童指導員1名、保育士2名、調理師1名</dd>
+					</dl>
+					<dl class="top-facility__term">
+						<dt>施設運営システム</dt>
+						<dd>HUG</dd>
+					</dl>
+				</div>
+
+
+			</div>
+
+
+
+
+			<div class="top-facility__photo">
+				<div class="top-facility__image">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/sumple.jpg' ); ?>"
+						alt="施設の写真">
+				</div>
+				<div class="top-facility__image">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/sumple.jpg' ); ?>"
+						alt="施設の写真">
+				</div>
+				<div class="top-facility__image">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/sumple.jpg' ); ?>"
+						alt="施設の写真">
+				</div>
+				<div class="top-facility__image">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/sumple.jpg' ); ?>"
+						alt="施設の写真">
+				</div>
+			</div>
+
+			<div class="top-facility__contact">
+
+				<h2 class="top-facility__contact-title section-title">
+					ご相談・お問い合わせ
+				</h2>
+				<p class="top-facility__contact-text">
+					お子さまのことでご不安なこと、まずはご相談ください。
+				</p>
+				<div class="top-facility__contact-container">
+					<div class="top-facility__contact-phone">TEL 000-0000-0000</div>
+					<div class="top-facility__contact-button">
+						<a href="#">お問い合わせ</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="top-access top-access-layout">
+		<div class="top-access__inner inner">
+			<h2 class="top-access__title section-title">
+				アクセス
+			</h2>
+			<div class="top-access__map">
+				<iframe>
+				</iframe>
+			</div>
+			<div class="top-access__wrap">
+				<div class="top-access__container">
+
+					<div class="top-access__logo">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/logo-name.svg' ); ?>"
+							alt="kid's キララ">
+					</div>
+					<p class="top-access__address">
+						宮崎市浮田１０３２－１<br>
+						<span>（角力田バス停目の前）</span>
+					</p>
+
+					<div class="top-access__list">
+						<div class="top-access__item">
+							<dt class="top-access__term">利用時間</dt>
+							<dd class="top-access__decs">月〜金曜日&emsp;14：00〜17：00<br>
+								祝日・長期休暇&emsp;9：30〜14：30<br>
+								<span class="top-access__sub">（延長あり）</span>
+							</dd>
+						</div>
+						<div class="top-access__item">
+							<dt class="top-access__term">送迎</dt>
+							<dd class="top-access__decs">あり
+								<span class="top-access__sub">（詳細はお問い合わせください）</span>
+							</dd>
+						</div>
+					</div>
+
+				</div>
+				<div class="top-access__image">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/access1.jpg' ); ?>"
+						alt="キララの施設写真">
+				</div>
+
+			</div>
+
+
+
+
+
+
+		</div>
+	</section>
+
 
 
 </main>

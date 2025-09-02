@@ -46,11 +46,10 @@
 
 .top-about__support-text {
   margin-top: rem(45);
-  // width: fit-content;
   font-size: rem(27.6);
   line-height: calc(33.15 / 27.62);
   font-weight: $bold;
-  letter-spacing: normal;
+  letter-spacing: -0.04em;
 }
 
 .top-about__support-list {

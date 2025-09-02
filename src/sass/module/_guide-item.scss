@@ -1,0 +1,28 @@
+@use 'global' as *;
+
+.guide-item {
+  padding: rem(16);
+  border: rem(1) solid $gray;
+  border-radius: rem(31);
+  background-color: $white;
+}
+
+.guide-item__title {
+  padding: rem(14) rem(32);
+  background-color: $yellow2;
+  border-radius: rem(8.5);
+  font-size: rem(30);
+  line-height: calc(36 / 30);
+  font-weight: $bold;
+  letter-spacing: -0.04em;
+  color: $black2;
+}
+
+.guide-item__text {
+	margin-top: rem(16);
+  font-size: rem(30);
+  line-height: calc(36 / 30);
+  letter-spacing: -0.04em;
+  font-weight: $bold;
+  color: $black2;
+}
