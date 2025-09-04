@@ -10,12 +10,18 @@
   font-weight: $bold;
   letter-spacing: 0.05em;
   line-height: 1;
-  width: rem(495);
+  max-width: rem(495);
   height: rem(72);
   padding: rem(20);
   overflow: hidden;
   z-index: 1;
 	transition: background-color  0.3s, color 0.3s;
+
+  @include mq("md") {
+    font-size: rem(24);
+    height: rem(60);
+    padding: rem(18) rem(20);
+  }
 }
 
 .button:hover {

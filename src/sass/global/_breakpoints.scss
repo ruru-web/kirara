@@ -1,4 +1,4 @@
-@use 'sass:map';
+@use "sass:map";
 
 // どっちファーストの設定（"sp" or "pc"）
 $startFrom: pc;
@@ -57,6 +57,7 @@ $mediaquerys: (
       display: block;
     }
   }
+
 
   //モバイルのみ表示
   .u-mobile {

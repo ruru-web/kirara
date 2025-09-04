@@ -17,6 +17,9 @@
 	width: 82.604%;
 	height: 100%;
 
+	@include mq("md") {
+		width: 95%;
+	}
 }
 
 .top-mv__image {
@@ -38,4 +41,8 @@
   line-height: 1.75;
 	letter-spacing: 0.01rem;
 	font-weight: $bold;
+	@include mq("md") {
+    font-size: 24px;
+		left: 35%;
+	}
 }

@@ -9,7 +9,7 @@
     height: rem(130);
     background-color: transparent;
     @include mq("md") {
-        // height: rem(40);
+        height: rem(80);
     }
 }
 
@@ -19,7 +19,7 @@
     // display: flex;
     // justify-content: space-between;
     @include mq("md") {
-        // padding: 0 rem(50);
+        padding: 0 rem(15);
     }
 }
 
@@ -28,7 +28,7 @@
     width: 100%;
     height: inherit;
     @include mq("md") {
-        // max-width: rem(74);
+        max-width: rem(240);
     }
 }
 
@@ -37,7 +37,12 @@
     height: inherit;
     display: flex;
     align-items: center;
+    @include mq("md") {
+        padding-top: 0;
+    }
 }
+
+
 
 .header__logo img {
     width: 100%;

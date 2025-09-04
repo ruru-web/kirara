@@ -1,0 +1,52 @@
+@use "global" as *;
+
+.footer {
+  margin-top: rem(-84);
+  background-image: url(../images/common/bg-footer.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+
+
+.footer__container {
+  padding-top: rem(84);
+  display: flex;
+  max-width: rem(1116);
+}
+
+.footer__logo {
+  width: rem(167);
+  height: rem(281);
+}
+
+.footer__nav {
+  margin-left: rem(84);
+
+  @include mq("md") {
+    margin-left: rem(30);
+	}
+}
+
+.footer__item {
+  font-size: rem(24);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-weight: $regular;
+  color: $black;
+
+  @include mq("md") {
+    font-size: rem(16);
+	}
+}
+
+.footer__item-link {
+  padding: rem(10);
+  display: inline-block;
+  width: 100%;
+}
+
+.footer__item-link:hover {
+  cursor: pointer;
+}

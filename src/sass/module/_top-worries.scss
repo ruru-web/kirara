@@ -18,6 +18,11 @@
 	max-width: rem(1045);
 	width: 100%;
 	aspect-ratio: 1046/776;
+
+	@include mq("md") {
+    max-width: 100%;
+		aspect-ratio: 0;
+	}
 }
 
 .top-worries__image img {

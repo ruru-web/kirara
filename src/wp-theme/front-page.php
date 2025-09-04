@@ -6,10 +6,18 @@
 
 	<section class="top-mv top-mv-layout">
 		<div class="top-mv__container">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/mv.png" alt="ランドセルを背負って走る子ども">
+			<picture>
+				<!-- PCサイズ（768px以上） -->
+				<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/common/mv.png"
+					media="(min-width: 768px)">
+
+				<!-- SPサイズ（768px未満） -->
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/mv-sp.png" alt="ランドセルを背負って走る子ども">
+			</picture>
+
 			<h2 class="top-mv__title">
-				お子様が自分で踏み出す<br>
-				「一歩」のお手伝いをします
+				お子様が<br class="u-mobile">自分で踏み出す<br>
+				「一歩」のお手伝い<br class="u-mobile">をします
 			</h2>
 		</div>
 	</section>
@@ -17,11 +25,21 @@
 	<section class="top-worries top-worries-layout">
 		<div class="top-worries__inner inner">
 			<div class="top-worries__title section-title">
-				お子様にこんな不安はありませんか？
+				お子様にこんな不安は<br class="u-mobile">ありませんか？
 			</div>
+
+
+
 			<div class="top-worries__image">
-				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/worries.png' ); ?>"
-					alt="お悩みの症例8つ">
+				<picture>
+					<!-- PCサイズ（768px以上） -->
+					<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/common/worries.png"
+						media="(min-width: 768px)">
+
+					<!-- SPサイズ（768px未満） -->
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/worries-sp.png" alt="お悩みの症例8つ">
+				</picture>
+
 			</div>
 		</div>
 
@@ -31,7 +49,7 @@
 	<section class="top-about top-about-layout">
 		<div class="top-about__inner inner">
 			<div class="top-about__title section-title">
-				放課後等デイサービスってどんなところ？
+				放課後等デイサービスって<br class="u-mobile">どんなところ？
 			</div>
 			<div class="top-about__container">
 				<div class="top-about__wrap">
@@ -53,42 +71,32 @@
 				</div>
 
 				<p class="top-about__support-text">
-					令和6年度報酬改定において、「児童発達支援」「放課後等デイサービス」での支援で、<br>
+					令和6年度報酬改定において、「児童発達支援」「放課後等デイサービス」での支援で、<br class="u-desktop">
 					「5領域」全て含めた総合的な支援を提供することが運営基準に明記されています。
 				</p>
 
-				<div class="top-about__support-list">
-					<div class="top-about__support-row top-about__support-row--first">
-						<?php
-						$first_row_items = [
-							['src' => 'about1.png', 'alt' => '健康・生活'],
-							['src' => 'about2.png', 'alt' => '運動・感覚'],
-							['src' => 'about3.png', 'alt' => '認知・行動'],
-						];
+				<ul class="top-about__support-list">
+					<?php
+					// 全ての画像アイテムを一つの配列にまとめる
+					$support_items = [
+						['src' => 'about1.png', 'alt' => '健康・生活'],
+						['src' => 'about2.png', 'alt' => '運動・感覚'],
+						['src' => 'about3.png', 'alt' => '認知・行動'],
+						['src' => 'about4.png', 'alt' => '言語・コミュニケーション'],
+						['src' => 'about5.png', 'alt' => '人間関係・社会性'],
+					];
 
-				    foreach ($first_row_items as $index => $item) : ?>
-						<div class="top-about__support-item top-about__support-item--<?php echo $index + 1; ?>">
-							<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/' . $item['src']); ?>"
-								alt="<?php echo esc_attr($item['alt']); ?>">
-						</div>
-						<?php endforeach; ?>
-					</div>
+					// ループで画像を出力
+					foreach ($support_items as $index => $item) :
+					?>
+					<li class="top-about__support-item top-about__support-item--<?php echo $index + 1; ?>">
+						<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/' . $item['src']); ?>"
+							alt="<?php echo esc_attr($item['alt']); ?>">
+					</li>
+					<?php endforeach; ?>
+				</ul>
 
-					<div class="top-about__support-row top-about__support-row--second">
-						<?php
-						$second_row_items = [
-							['src' => 'about4.png', 'alt' => '言語・コミュニケーション'],
-							['src' => 'about5.png', 'alt' => '人間関係・社会性'],
-						];
 
-				    foreach ($second_row_items as $index => $item) : ?>
-						<div class="top-about__support-item top-about__support-item--<?php echo $index + 4; ?>">
-							<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/' . $item['src']); ?>"
-								alt="<?php echo esc_attr($item['alt']); ?>">
-						</div>
-						<?php endforeach; ?>
-					</div>
-				</div>
 				<p class="top-about__note">
 					kid’sキララではその基本5領域に加えて<br>
 					3つのサービスをご提供します。
@@ -105,26 +113,33 @@
 				kid’sキララ3つの特徴
 			</div>
 			<p class="top-features__text">
-				kid’sキララは、食育とスキルアップに力を入れる<br>
-				県内でも珍しい放課後等デイサービスです。
+				kid’sキララは、食育と<br class="u-mobile">スキルアップに力を入れる<br>
+				県内でも珍しい放課後等<br class="u-mobile">デイサービスです。
 			</p>
 
-			<div class="top-features__wrap">
+			<div class="top-features__bubble">
 				<!-- 吹き出し -->
-				<div class="top-features__bubbles">
+
+				<div class="top-features__bubble-learn">
 					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/features1.png' ); ?>"
-						alt="学ぶ" class="top-features__bubble js-fade-slide">
+						alt="学ぶ" class="js-fade-slide">
+				</div>
+				<div class="top-features__bubble-eat">
 					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/features2.png' ); ?>"
-						alt="食べる" class="top-features__bubble js-fade-slide">
+						alt="食べる" class="js-fade-slide">
+				</div>
+				<div class="top-features__bubble-use">
 					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/features3.png' ); ?>"
-						alt="活かす" class="top-features__bubble js-fade-slide">
+						alt="活かす" class="js-fade-slide">
 				</div>
 
-				<!-- 星の画像 -->
-				<div class="top-features__image js-floating">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/star.png' ); ?>"
-						alt="星のキャラクター">
-				</div>
+			</div>
+
+			<!-- 星の画像 -->
+			<div class="top-features__image js-floating">
+				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/star.png' ); ?>"
+					alt="星のキャラクター">
+
 			</div>
 
 			<div class="top-features__cards features-cards">
@@ -218,7 +233,6 @@
 				</a>
 			</div>
 
-		</div>
 	</section>
 
 	<section class="top-guide top-guide-layout">
@@ -275,12 +289,12 @@
 
 
 					<dl class="top-facility__term">
-						<dt>設置・運営団体</dt>
+						<dt>設置・<br class="u-mobile">運営団体</dt>
 						<dd>合同会社 kid’s キララ</dd>
 					</dl>
 					<dl class="top-facility__term">
 						<dt>所在地</dt>
-						<dd>〒880-2104 宮崎市浮田１０３２－１</dd>
+						<dd>〒880-2104 <br class="u-mobile">宮崎市浮田１０３２－１</dd>
 					</dl>
 					<dl class="top-facility__term">
 						<dt>TEL</dt>
@@ -303,7 +317,7 @@
 						<dd>管理者1名、児童発達支援管理責任者1名、児童指導員1名、保育士2名、調理師1名</dd>
 					</dl>
 					<dl class="top-facility__term">
-						<dt>施設運営システム</dt>
+						<dt>施設運営<br class="u-mobile">システム</dt>
 						<dd>HUG</dd>
 					</dl>
 				</div>
@@ -339,7 +353,7 @@
 					ご相談・お問い合わせ
 				</h2>
 				<p class="top-facility__contact-text">
-					お子さまのことでご不安なこと、まずはご相談ください。
+					お子さまのことでご不安なこと、<br class="u-mobile">まずはご相談ください。
 				</p>
 				<div class="top-facility__contact-container">
 					<div class="top-facility__contact-phone">TEL 000-0000-0000</div>
