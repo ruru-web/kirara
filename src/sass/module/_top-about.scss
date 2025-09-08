@@ -1,13 +1,26 @@
 @use "global" as *;
 
 .top-about {
+  /* 上端を楕円で切る */
+  clip-path: ellipse(135% 100% at 50% 100%);
+
+  @include mq("md") {
+    clip-path: ellipse(250% 100% at 50% 0%);
+  }
+}
+
+.top-about__bottom {
   padding-top: rem(80);
-  padding-bottom: rem(96);
-  background-image: url(../images/common/bg-white.png);
-  // background-size: 100% auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top left;
+  padding-bottom: rem(92);
+  background-color: $white;
+  /* 下端を楕円で切る */
+  clip-path: ellipse(135% 100% at 50% 0%);
+
+  @include mq("md") {
+    padding-top: rem(50);
+    padding-bottom: rem(60);
+    clip-path: ellipse(250% 100% at 50% 100%);
+  }
 }
 
 .top-about__container {
@@ -32,12 +45,13 @@
 .top-about__text {
   width: 40.19%;
   font-size: rem(26);
-  line-height: calc(40 / 26);
+  // line-height: calc(40 / 26);
+  line-height: 1.7;
   letter-spacing: normal;
   font-weight: $bold;
   color: $black;
 
-    @include mq("md") {
+  @include mq("md") {
     width: 100%;
     font-size: rem(18);
   }
@@ -64,12 +78,15 @@
 .top-about__support-text {
   margin-top: rem(45);
   font-size: rem(27.6);
-  line-height: calc(33.15 / 27.62);
+  // line-height: calc(33.15 / 27.62);
+  line-height: 1.5;
   font-weight: $bold;
   letter-spacing: -0.04em;
+
   @include mq("md") {
     font-size: rem(18);
-    line-height: 1.4;
+    // line-height: 1.4;
+    line-height: 1.6;
     letter-spacing: -0.05em;
   }
 }
@@ -79,7 +96,7 @@
   padding-right: rem(50);
   display: flex;
   justify-content: center;
-  gap: 18px;
+  gap: rem(18);
 
   @include mq("md") {
     // flex-direction: column;
@@ -87,25 +104,6 @@
     flex-wrap: wrap;
   }
 }
-
-// .top-about__support-row {
-//   display: flex;
-//   justify-content: center;
-//   gap: 18px;
-//   flex-wrap: nowrap;
-
-//   @include mq("md") {
-//     justify-content: center;
-//     flex-wrap: wrap;
-//   }
-// }
-
-// .top-about__support-row--first,
-// .top-about__support-row--second {
-//   @include mq("md") {
-//     justify-content: center;
-//   }
-// }
 
 .top-about__support-item {
   // width: rem(196);
@@ -115,10 +113,7 @@
   text-align: center;
 
   @include mq("md") {
-    // width: 120px;
-    // height: 120px;
-
-    width: calc(calc(100% / 3) - 18px);
+    width: calc(calc(100% / 3) - rem(18));
   }
 }
 
@@ -129,7 +124,6 @@
 
   @include mq("md") {
     aspect-ratio: 1/1;
-    
   }
 }
 
@@ -138,11 +132,13 @@
   padding-right: rem(50);
   text-align: center;
   font-size: rem(31);
-  line-height: calc(37 / 31);
+  // line-height: calc(37 / 31);
+  line-height: 1.5;
   font-weight: $bold;
   letter-spacing: -0.05em;
 
   @include mq("md") {
+    margin-top: rem(60);
     padding: 0;
     font-size: rem(20);
   }

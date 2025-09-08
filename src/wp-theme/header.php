@@ -25,7 +25,7 @@
 			<?php $tag = is_front_page() ? 'h1' : 'h2'; ?>
 			<<?php echo $tag; ?> class="header__logo">
 				<a href="<?php echo esc_url(home_url('/')); ?>">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.svg" alt="kirara" width=""
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.svg" alt="キララ" width=""
 						height="" loading="lazy" decoding="async">
 				</a>
 			</<?php echo $tag; ?>>

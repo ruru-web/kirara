@@ -1,8 +1,31 @@
 @use "global" as *;
 
 .top-guide {
-  position: relative;
-  padding-bottom: rem(208);
+  /* 上端を楕円で切る */
+  clip-path: ellipse(190% 100% at 50% 100%);
+
+  @include mq("md") {
+    clip-path: ellipse(260% 100% at 50% 100%);
+	}
+}
+
+.top-guide__bottom {
+  padding-top: rem(100);
+  padding-bottom: rem(210);
+   /* 下端を楕円で切る */
+  clip-path: ellipse(190% 100% at 50% 0%);
+  background-image: url(../images/common/bg-star2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  @include mq("md") {
+    padding-top: rem(80);
+    padding-bottom: rem(100);
+    clip-path: ellipse(260% 100% at 50% 0%);
+    background-size: contain;
+    background-repeat: repeat-y;
+	}
 }
 
 .top-guide__inner {
@@ -10,28 +33,10 @@
   z-index: 1;
 }
 
-.top-guide::before {
-  content: "";
-  position: absolute;
-  inset: 0; //全画面
-  padding-bottom: rem(208);
-  // background-image: url(../images/common/bg-star2.png);
-  background-image: url(../images/common/back01.jpg);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: top left;
-  padding-bottom: rem(208);
-
-  mask-image: url(../images/common/bg-star2-mask.png);
-  mask-size: 100% 100%;
-  mask-repeat: no-repeat;
-  mask-position: top left;
-}
-
-.top-guide__title {
-  padding-top: rem(88);
-}
-
 .top-guide__items {
   margin-top: rem(66);
+
+  @include mq("md") {
+    margin-top: rem(40);
+  }
 }

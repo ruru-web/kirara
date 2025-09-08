@@ -1,32 +1,61 @@
 @use "global" as *;
 
 .footer {
-  margin-top: rem(-84);
-  background-image: url(../images/common/bg-footer.png);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: top left;
+  margin-top: rem(-50);
+  padding-top: rem(84);
+  padding-bottom: rem(80);
+  background-color: $blue2;
+  /* 上端を楕円で切る */
+  clip-path: ellipse(110% 100% at 50% 100%);
+
+  @include mq("md") {
+    padding-top: rem(60);
+    padding-bottom: rem(40);
+    clip-path: ellipse(150% 100% at 50% 100%);
+  }
 }
 
+.footer__inner {
+  width: 100%;
+  max-width: rem(1165);
+  padding-right: $padding-pc;
+  padding-left: $padding-pc;
+  margin-right: auto;
+  margin-left: auto;
 
+  @include mq("md") {
+    max-width: rem(600);
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+  }
+}
 
 .footer__container {
-  padding-top: rem(84);
   display: flex;
   max-width: rem(1116);
+  align-items: flex-end;
 }
 
 .footer__logo {
-  width: rem(167);
-  height: rem(281);
+  max-width: rem(167);
+  width: 100%;
+
+  @include mq("md") {
+    max-width: rem(100);
+  }
+}
+
+.footer__logo img {
+  aspect-ratio: 167/281;
+  object-fit: contain;
 }
 
 .footer__nav {
-  margin-left: rem(84);
+  margin-left: rem(45);
 
   @include mq("md") {
     margin-left: rem(30);
-	}
+  }
 }
 
 .footer__item {
@@ -38,15 +67,16 @@
 
   @include mq("md") {
     font-size: rem(16);
-	}
+  }
 }
 
 .footer__item-link {
-  padding: rem(10);
+  padding: rem(11);
   display: inline-block;
   width: 100%;
 }
 
 .footer__item-link:hover {
   cursor: pointer;
+  opacity: 0.7;
 }

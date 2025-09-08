@@ -12,7 +12,6 @@
   color: $brown;
 
   @include mq("md") {
-    // font-size: 24px;
     font-size: rem(24);
   }
 }
@@ -20,17 +19,9 @@
 .section-title::after {
   content: "";
   display: block;
-  // width: 120px;
   max-width: rem(570);
   height: rem(10);
   margin: rem(15) auto 0;
-  // background-image: repeating-linear-gradient(
-  // 	to right,
-  // 	#f4c13c 0,
-  // 	#f4c13c 6px,
-  // 	transparent 6px,
-  // 	transparent 12px
-  // );
   background-image: radial-gradient(circle, #f2d653 rem(5), transparent rem(5));
   background-position: left rem(-13) bottom;
   background-repeat: repeat-x;

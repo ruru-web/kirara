@@ -41,6 +41,7 @@ $gray3: #4d4d4d;
 $white: #fff;
 $brown: #534741;
 $blue: #64a5dd;
+$blue2: #cfe6ef;
 $red: #c0272d;
 $yellow: #dc950f;
 $yellow2: #f2d653;
@@ -50,8 +51,7 @@ $base: #3f3c3c;
 body {
   font-family: $base-font;
   color: $base;
-  // background-image: url(../images/common/bg-star-1.jpg);
-  background-image: url(../images/common/back02.jpg);
+  background-image: url(../images/common/bg-star1.jpg);
   background-size: 100% auto;
   background-repeat: repeat-y;
   background-position: top left;

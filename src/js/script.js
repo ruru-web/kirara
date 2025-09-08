@@ -199,23 +199,58 @@ const openingAnimKeyframes = (content) => [
   },
 ];
 
-//吹き出しをふわっと表示
-document.addEventListener("DOMContentLoaded", function () {
-  const fadeElems = document.querySelectorAll(".js-fade-slide");
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target); // 1回だけ表示で停止
-        }
-      });
-    },
-    {
-      threshold: 0.2,
-    }
-  );
 
-  fadeElems.forEach((el) => observer.observe(el));
+document.addEventListener('DOMContentLoaded', function() {
+	// Intersection Observerのオプション
+	const observerOptions = {
+		threshold: 0.3, // 30%見えたらトリガー
+		rootMargin: '0px 0px -50px 0px'
+	};
+
+	let animationStarted = false; // アニメーション開始フラグ
+
+	// 吹き出しアニメーション用のObserver
+	const bubbleObserver = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting && !animationStarted) {
+				animationStarted = true; // 重複実行を防ぐ
+				
+				const bubbleItems = document.querySelectorAll('.js-bubble-animation');
+				let completedAnimations = 0; // 完了したフェードインの数
+				
+				// 左から順番にフェードイン（0ms, 300ms, 600ms）
+				bubbleItems.forEach((item, index) => {
+					const delay = index * 300; // インデックスに基づく遅延
+					
+					setTimeout(() => {
+						// フェードイン開始
+						item.classList.add('is-animated');
+						
+						// フェードイン完了をカウント
+						setTimeout(() => {
+							completedAnimations++;
+							
+							// 全てのフェードインが完了したら、同じタイミングでpulseアニメーション開始
+							if (completedAnimations === bubbleItems.length) {
+								bubbleItems.forEach(bubbleItem => {
+									bubbleItem.classList.add('is-pulse');
+								});
+							}
+						}, 800); // transitionの時間と合わせる
+						
+					}, delay);
+				});
+				
+				// 一度アニメーションしたら監視を停止
+				bubbleObserver.unobserve(entry.target);
+			}
+		});
+	}, observerOptions);
+
+	// 吹き出しセクションを監視
+	const bubbleSection = document.querySelector('.top-features__bubble');
+	if (bubbleSection) {
+		bubbleObserver.observe(bubbleSection);
+	}
 });
