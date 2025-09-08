@@ -355,7 +355,7 @@
 				</p>
 				<div class="top-facility__contact-container">
 					<div class="top-facility__contact-phone">
-						<a href="">
+						<a href="tel:08052671381">
 							TEL&nbsp;080-5267-1381
 						</a>
 					</div>
