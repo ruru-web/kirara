@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		entries.forEach(entry => {
 			if (entry.isIntersecting && !animationStarted) {
 				animationStarted = true; // 重複実行を防ぐ
-				
+
 				const bubbleItems = document.querySelectorAll('.js-bubble-animation');
 				let completedAnimations = 0; // 完了したフェードインの数
 				
