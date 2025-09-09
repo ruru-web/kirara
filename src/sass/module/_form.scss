@@ -1,0 +1,191 @@
+@use "global" as *;
+
+.contact-main {
+  padding-top: rem(80);
+  max-width: rem(600);
+  width: 100%;
+  margin-inline: auto;
+
+  @include mq(md) {
+    padding-top: rem(60);
+  }
+}
+
+.form__wrap {
+}
+
+.form__wrap.form__wra-textarea {
+  @include mq(md) {
+    align-items: flex-start;
+  }
+}
+
+.form__wrap + .form__wrap {
+  margin-top: rem(30);
+}
+
+.form__label {
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1;
+  color: $black;
+  letter-spacing: 0.08em;
+  @include mq(md) {
+  }
+}
+
+.form__wrap.form__wra-textarea .form__label {
+  @include mq(md) {
+    margin-top: rem(10);
+  }
+}
+
+.form__label span {
+  margin-left: rem(6);
+}
+
+.form__input,
+.form__select,
+.form__radio,
+.form__checkbox,
+.form__textarea {
+  margin-top: rem(10);
+}
+
+.form__input,
+.form__textarea {
+  flex-grow: 1;
+}
+
+.form__submit {
+  margin-top: rem(60);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(20);
+
+  @include mq("md") {
+  }
+}
+
+.form-input input {
+  width: 100%;
+  height: rem(40);
+  padding: rem(10);
+  border: rem(1) solid $black;
+  border-radius: rem(8.5);
+}
+
+.confirm_your-name,
+.confirm_your-tel,
+.confirm_your-email,
+.confirm_your-subject,
+.confirm_your-message {
+  color: $black;
+  font-size: rem(16);
+  font-weight: $regular;
+  font-family: $base-font;
+  line-height: calc(16 / 16);
+  letter-spacing: 0em;
+  @include mq("md") {
+  }
+}
+
+.form-textarea textarea {
+  width: 100%;
+  min-height: rem(360);
+  padding: rem(10);
+  border: rem(1) solid $black;
+  border-radius: rem(8.5);
+
+  @include mq("md") {
+    min-height: rem(240);
+  }
+}
+
+.form-submit input {
+  color: $black;
+  width: 100%;
+  font-size: rem(24);
+  font-weight: $bold;
+  font-family: $base-font;
+  line-height: calc(24 / 24);
+  letter-spacing: 0em;
+  background-color: $yellow2;
+  padding: rem(16);
+  border-radius: rem(10);
+  transition: background-color 0.3s, color 0.3s;
+  @include mq("md") {
+    padding: rem(10);
+    font-size: rem(18);
+  }
+}
+
+@media (any-hover: hover) {
+  .form-submit input:hover {
+    color: $yellow2;
+    background-color: $black;
+    opacity: 1;
+  }
+}
+
+.form-submit input:disabled,
+.form-submit input:disabled:hover,
+.form-submit input:disabled:focus {
+  background-color: #ccc;
+  cursor: not-allowed;
+  border: 1px solid #ccc;
+  color: $white;
+  pointer-events: none;
+}
+
+.wpcf7-not-valid-tip {
+  color: $red;
+}
+
+.wpcf7-spinner {
+  display: none;
+}
+
+/*確認画面と完了画面を非表示*/
+.confirm_area,
+.thanks_area {
+  display: none;
+}
+
+/*デフォルトのサンクスメッセージを非表示*/
+.wpcf7-response-output {
+  display: none;
+}
+
+.confirm_area-top {
+  margin-bottom: rem(40);
+
+  @include mq("md") {
+    margin-bottom: rem(40);
+  }
+}
+
+.confirm_area-top h2 {
+  font-size: rem(24);
+  color: $black;
+  font-family: $base-font;
+  font-weight: $bold;
+  line-height: calc(24 / 24);
+  letter-spacing: 0em;
+  @include mq("md") {
+  }
+}
+
+.confirm_area-top p {
+  margin-top: rem(8);
+  color: $black;
+  font-size: rem(16);
+  font-family: $base-font;
+  font-weight: $regular;
+  line-height: calc(16 / 16);
+  letter-spacing: 0em;
+  @include mq("md") {
+  }
+}

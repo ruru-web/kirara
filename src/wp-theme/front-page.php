@@ -66,7 +66,7 @@
 							ご家族のサポートを行います。
 						</p>
 						<div class="top-about__image">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/about.jpg' ); ?>"
+							<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/about.jpg'); ?>"
 								alt="遊んでいる子どもたち">
 						</div>
 					</div>
@@ -86,14 +86,14 @@
 							['src' => 'about4.png', 'alt' => '言語・コミュニケーション'],
 							['src' => 'about5.png', 'alt' => '人間関係・社会性'],
 						];
-	
+
 						// ループで画像を出力
 						foreach ($support_items as $index => $item) :
 						?>
-						<li class="top-about__support-item top-about__support-item--<?php echo $index + 1; ?>">
-							<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/' . $item['src']); ?>"
-								alt="<?php echo esc_attr($item['alt']); ?>">
-						</li>
+							<li class="top-about__support-item top-about__support-item--<?php echo $index + 1; ?>">
+								<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/' . $item['src']); ?>"
+									alt="<?php echo esc_attr($item['alt']); ?>">
+							</li>
 						<?php endforeach; ?>
 					</ul>
 
@@ -122,15 +122,15 @@
 			<!-- 吹き出し -->
 			<div class="top-features__bubble">
 				<div class="top-features__bubble-item top-features__bubble--learn  js-bubble-animation">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/features1.png' ); ?>"
+					<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/features1.png'); ?>"
 						alt="学ぶ" class="js-fade-slide">
 				</div>
 				<div class="top-features__bubble-item top-features__bubble--eat  js-bubble-animation">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/features2.png' ); ?>"
+					<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/features2.png'); ?>"
 						alt="食べる" class="js-fade-slide">
 				</div>
 				<div class="top-features__bubble-item top-features__bubble--use  js-bubble-animation">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/features3.png' ); ?>"
+					<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/features3.png'); ?>"
 						alt="活かす" class="js-fade-slide">
 				</div>
 
@@ -138,7 +138,7 @@
 
 			<!-- 星の画像 -->
 			<div class="top-features__image js-floating">
-				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/star.png' ); ?>"
+				<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/star.png'); ?>"
 					alt="星のキャラクター">
 
 			</div>
@@ -148,7 +148,7 @@
 				<div class="features-cards__item features-card">
 					<div class="features-card__image">
 						<img
-							src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/features-card1.jpg' ); ?>"
+							src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/features-card1.jpg'); ?>"
 							alt="地図を囲んで勉強している子どもたち">
 					</div>
 					<div class="features-card__wrap">
@@ -177,7 +177,7 @@
 				<div class="features-cards__item features-card">
 					<div class="features-card__image">
 						<img
-							src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/features-card2.jpg' ); ?>"
+							src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/features-card2.jpg'); ?>"
 							alt="お弁当箱の前で手を合わせている子どもたち">
 					</div>
 					<div class="features-card__wrap">
@@ -203,7 +203,7 @@
 				<div class="features-cards__item features-card">
 					<div class="features-card__image">
 						<img
-							src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/features-card3.jpg' ); ?>"
+							src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/features-card3.jpg'); ?>"
 							alt="パソコンで学習する女の子">
 					</div>
 					<div class="features-card__wrap">
@@ -327,19 +327,19 @@
 
 		<div class="top-facility__photo">
 			<div class="top-facility__image">
-				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/photo1.jpg' ); ?>"
+				<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/photo1.jpg'); ?>"
 					alt="外観の写真">
 			</div>
 			<div class="top-facility__image">
-				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/photo2.jpg' ); ?>"
+				<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/photo2.jpg'); ?>"
 					alt="室内の写真">
 			</div>
 			<!-- <div class="top-facility__image">
-				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/sample.jpg' ); ?>"
+				<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/sample.jpg'); ?>"
 					alt="施設の写真">
 			</div>
 			<div class="top-facility__image">
-				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/sample.jpg' ); ?>"
+				<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/sample.jpg'); ?>"
 					alt="施設の写真">
 			</div> -->
 		</div>
@@ -382,7 +382,7 @@
 				<div class="top-access__container">
 
 					<div class="top-access__logo">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/logo-name.svg' ); ?>"
+						<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/logo-name.svg'); ?>"
 							alt="kid's キララ">
 					</div>
 					<p class="top-access__address">
@@ -408,10 +408,61 @@
 
 				</div>
 				<div class="top-access__image">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/access1.jpg' ); ?>"
+					<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/access1.jpg'); ?>"
 						alt="キララの施設写真">
 				</div>
 
+			</div>
+		</div>
+	</section>
+
+
+	<section class="contact">
+		<div class="contact__inner inner">
+			<h2 class="contact__title section-title">お問い合わせ</h2>
+			<p class="contact__text">
+				お問い合わせありがとうございます。<br>
+				近日中にメールかお電話にてご連絡を差し上げます。<br>
+				1週間たっても連絡がない場合、システムトラブルの可能性がありますので<br class="u-desktop">メール（a@gmail.com）にてご連絡くださいませ。
+			</p>
+
+			<!-- <form class="contact__form form" action="">
+				<dl class="form__wrap">
+					<dt class="form__label">名前<span>(必須)</span></dt>
+					<dd class="form__input form-input">
+						<input type="text">
+					</dd>
+				</dl>
+				<dl class="form__wrap">
+					<dt class="form__label">電話番号<span>(必須)</span></dt>
+					<dd class="form__input form-input">
+						<input type="tel">
+					</dd>
+				</dl>
+				<dl class="form__wrap">
+					<dt class="form__label">メールアドレス<span>(必須)</span></dt>
+					<dd class="form__input form-input">
+						<input type="email">
+					</dd>
+				</dl>
+				<dl class="form__wrap">
+					<dt class="form__label">題名</dt>
+					<dd class="form__input form-input">
+						<input type="title">
+					</dd>
+				</dl>
+				<dl class="form__wrap form__wrap--textarea">
+					<dt class="form__label">お問い合わせ内容</dt>
+					<dd class="form__textarea form-textarea">
+						<textarea name="message"></textarea>
+					</dd>
+				</dl>
+				<div class="form__submit form-submit">
+					<input type="submit" value="送信">
+				</div>
+			</form> -->
+			<div class="contact-main">
+				<?php echo do_shortcode('[contact-form-7 id="4a815ed" title="お問い合わせ"]'); ?>
 			</div>
 		</div>
 	</section>
