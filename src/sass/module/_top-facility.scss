@@ -74,17 +74,14 @@
   padding-right: rem(25);
   padding-left: rem(25);
   margin-top: rem(77);
-  // display: flex;
-  display: grid;
-  // grid-template-columns: repeat(4, 1fr);
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  display: flex;
+  justify-content: center;
   gap: rem(46);
-  // max-width: rem(1740);
   margin-inline: auto;
 
   @include mq("md") {
-    // flex-wrap: wrap;
-    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
     gap: rem(15);
     padding-right: rem(15);
     padding-left: rem(15);
@@ -93,7 +90,12 @@
 
 .top-facility__image {
   width: 100%;
+  width: calc(calc(100% / 4) - rem(46));
   // max-width: rem(411);
+
+  @include mq("md") {
+    width: calc(calc(100% / 2) - rem(15));
+  }
 }
 
 .top-facility__image img {
@@ -168,7 +170,7 @@
 .top-facility__contact-phone a {
   display: block;
   padding: rem(35) rem(33);
-  
+
   @include mq("md") {
     padding: rem(24) rem(33);
   }
