@@ -416,6 +416,57 @@
 		</div>
 	</section>
 
+
+	<section class="contact">
+		<div class="contact__inner inner">
+			<h2 class="contact__title section-title">お問い合わせ</h2>
+			<p class="contact__text">
+				お問い合わせありがとうございます。<br>
+				近日中にメールかお電話にてご連絡を差し上げます。<br>
+				1週間たっても連絡がない場合、システムトラブルの可能性がありますので<br class="u-desktop">メール（a@gmail.com）にてご連絡くださいませ。
+			</p>
+
+			<!-- <form class="contact__form form" action="">
+				<dl class="form__wrap">
+					<dt class="form__label">名前<span>(必須)</span></dt>
+					<dd class="form__input form-input">
+						<input type="text">
+					</dd>
+				</dl>
+				<dl class="form__wrap">
+					<dt class="form__label">電話番号<span>(必須)</span></dt>
+					<dd class="form__input form-input">
+						<input type="tel">
+					</dd>
+				</dl>
+				<dl class="form__wrap">
+					<dt class="form__label">メールアドレス<span>(必須)</span></dt>
+					<dd class="form__input form-input">
+						<input type="email">
+					</dd>
+				</dl>
+				<dl class="form__wrap">
+					<dt class="form__label">題名</dt>
+					<dd class="form__input form-input">
+						<input type="title">
+					</dd>
+				</dl>
+				<dl class="form__wrap form__wrap--textarea">
+					<dt class="form__label">お問い合わせ内容</dt>
+					<dd class="form__textarea form-textarea">
+						<textarea name="message"></textarea>
+					</dd>
+				</dl>
+				<div class="form__submit form-submit">
+					<input type="submit" value="送信">
+				</div>
+			</form> -->
+			<div class="contact-main">
+				<?php echo do_shortcode('[contact-form-7 id="4a815ed" title="お問い合わせ"]'); ?>
+			</div>
+		</div>
+	</section>
+
 </main>
 
 <?php get_footer(); ?>

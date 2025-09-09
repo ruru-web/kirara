@@ -140,6 +140,6 @@
   @include mq("md") {
     margin-top: rem(60);
     padding: 0;
-    font-size: clamp(rem(16), 0.761rem + 1.02vw, rem(19));
+    font-size: clamp(rem(18), 0.761rem + 1.02vw, rem(19));
   }
 }

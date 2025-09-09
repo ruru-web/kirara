@@ -20,7 +20,7 @@
 					<a class="footer__item-link" href="#guide">ご利用案内</a>
 				</li>
 				<li class="footer__item">
-					<a class="footer__item-link" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">お問い合わせ</a>
+					<a class="footer__item-link" href="<?php echo esc_url(home_url('/contact/')); ?>">お問い合わせ</a>
 				</li>
 				<li class="footer__item">
 					<a class="footer__item-link" href="#access">アクセス</a>
@@ -33,8 +33,6 @@
 </footer>
 
 <?php wp_footer(); ?>
-
-
 </body>
 
 </html>
