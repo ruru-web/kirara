@@ -28,39 +28,42 @@
 }
 
 .top-facility__term {
-  display: flex;
+  display: table;
+  width: 100%;
+  table-layout: fixed; // 幅の比率を固定
   font-size: rem(24);
   line-height: 1.5;
   letter-spacing: -0.04em;
   font-weight: $bold;
   color: $brown;
-  align-items: center;
+  border-collapse: collapse; // 境界線のズレを防ぐ
 
   @include mq("md") {
     font-size: rem(16);
   }
 }
 
-.top-facility__term dt {
-  width: 29.8063%;
-  display: grid;
-  border-bottom: rem(1) solid $brown;
-  place-items: center;
+.top-facility__term dt,
+.top-facility__term dd {
+  display: table-cell;
+  vertical-align: middle; // 中央揃え
   padding: rem(19) 0;
 
-  @include mq("md") {
-    padding: rem(16) 0;
-  }
+}
+
+.top-facility__term dt {
+  width: 30%;
+  text-align: center;
+  border-bottom: rem(1) solid $brown;
 }
 
 .top-facility__term dd {
-  width: 70.1937%;
-  margin-left: rem(52);
-  padding: rem(19) 0;
+  width: 70%;
+  padding-left: rem(30); // モバイルは調整
+  word-break: break-word;
 
   @include mq("md") {
-    margin-left: rem(18);
-    padding: rem(16) 0;
+    padding-left: rem(18);
   }
 }
 

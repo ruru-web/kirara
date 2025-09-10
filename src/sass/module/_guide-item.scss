@@ -1,14 +1,41 @@
 @use "global" as *;
 
 .guide-item {
-  padding: rem(16);
+  width: 100%;
+  max-width: rem(1140);
+  padding: rem(19) rem(19) rem(25);
   border: rem(1) solid $gray;
   border-radius: rem(31);
   background-color: $white;
 }
 
+.guide-item__price {
+  position: relative;
+  padding-bottom: rem(50);
+}
+
+.guide-item__price::before {
+  content: "";
+  position: absolute;
+  top: -15%;
+  left: 45.3%;
+  width: rem(52);
+  height: rem(18);
+  background-color: $gray3;
+}
+
+.guide-item__price::after {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 46.8%;
+  width: rem(18);
+  height: rem(52);
+  background-color: $gray3;
+}
+
 .guide-item__title {
-  padding: rem(14) rem(32);
+  padding: rem(12) rem(32);
   background-color: $yellow2;
   border-radius: rem(8.5);
   font-size: rem(30);
@@ -21,6 +48,19 @@
     padding: rem(14) rem(18);
     font-size: rem(20);
   }
+}
+
+.guide-item__wrap {
+  margin-top: rem(25);
+}
+
+.guide-item__image {
+  max-width: rem(1097);
+}
+
+.guide-item__image img {
+  aspect-ratio: 1097/247;
+  object-fit: contain;
 }
 
 .guide-item__text {

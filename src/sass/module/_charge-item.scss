@@ -1,0 +1,107 @@
+@use "global" as *;
+
+.charge-item {
+  padding: rem(5) rem(6);
+  display: flex;
+  // flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  // justify-content: space-between;
+  max-width: rem(1095);
+  background-color: $blue3;
+  gap: rem(67);
+  border-radius: rem(8.5);
+
+  @include mq("md") {
+    flex-direction: column;
+    gap: rem(0);
+  }
+}
+
+.charge-item__label {
+  max-width: rem(612);
+  width: 100%;
+  font-size: rem(25);
+  line-height: calc(36 / 25);
+  font-weight: $bold;
+  letter-spacing: -0.04em;
+  text-align: center;
+  background-color: $white;
+
+  display: flex;
+  align-items: center; // 縦中央揃え
+  padding: rem(11) rem(35);
+  border-radius: rem(8.5);
+
+  @include mq("md") {
+    flex-direction: column;
+    font-size: rem(20);
+  }
+}
+
+.charge-item__note {
+  font-size: rem(18);
+  line-height: calc(36 / 18);
+  font-weight: $bold;
+  letter-spacing: -0.04em;
+
+  @include mq("md") {
+    font-size: rem(14);
+  }
+}
+
+.charge-item__info {
+  display: flex;
+  gap: rem(28);
+  align-items: center;
+  justify-content: center;
+  font-weight: $bold;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: $white;
+}
+
+.charge-item__price-label {
+  // max-width: rem(612);
+  // width: 100%;
+  font-size: rem(25);
+  line-height: calc(36 / 25);
+
+  @include mq("md") {
+    font-size: rem(20);
+  }
+}
+
+.charge-item__amount {
+  display: flex;
+  gap: rem(5);
+  align-items: flex-end; // 下揃え
+  padding-bottom: rem(8);
+}
+
+.charge-item__price {
+  font-size: rem(47);
+  // line-height: calc(75 / 47);
+  line-height: 1;
+  // font-weight: $bold;
+  letter-spacing: 0.09em;
+  // text-align: center;
+  // color: $white;
+
+  @include mq("md") {
+    font-size: rem(36);
+  }
+}
+
+.charge-item__yen {
+  font-size: rem(36);
+  // line-height: calc(75 / 36);
+  line-height: 1;
+  // font-weight: $bold;
+  // letter-spacing: -0.04em;
+  // text-align: center;
+  // color: $white;
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}

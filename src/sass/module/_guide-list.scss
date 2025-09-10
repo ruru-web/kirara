@@ -3,5 +3,17 @@
 .guide-list {
   display: flex;
   flex-direction: column;
-  gap: rem(45);
+  // gap: rem(45);
+}
+
+.guide-list__item {
+  margin-top: rem(45);
+}
+
+.guide-list__item:first-child {
+  margin-top: 0;
+}
+
+.guide-list__item:nth-child(3) {
+  margin-top: rem(80);
 }
