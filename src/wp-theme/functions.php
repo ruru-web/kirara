@@ -25,25 +25,6 @@ function wpcf7_autop_return_false()
 }
 
 
-// Contact Form7の送信ボタンをクリックした後の遷移先設定（サンクスページ）
-// 数字を該当IDに変える、ページ名も変える
-add_action('wp_footer', 'add_origin_thanks_page');
-function add_origin_thanks_page()
-{
-  $thanks = home_url('/contact-thanks/');
-  echo <<< EOC
-     <script>
-       var thanksPage = {
-        20: '{$thanks}'
-       };
-     document.addEventListener( 'wpcf7mailsent', function( event ) {
-       location = thanksPage[event.detail.contactFormId];
-     }, false );
-     </script>
-   EOC;
-}
-
-
 /* wordpressバージョン情報の削除 */
 remove_action("wp_head", "wp_generator");
 
@@ -213,45 +194,3 @@ function custom_hiragana_validation_filter($result, $tag)
 
   return $result;
 }
-
-
-
-// カスタム投稿
-//投稿タイプの作成(カスタム投稿)
-register_post_type(
-  'pick',
-  array(
-    'labels' => array(
-      'name' => __('カスタム投稿'),
-      'singular_name' => __('カスタム投稿')
-    ),
-    'supports' => array(
-      'title',
-      'editor',
-      'author',
-      'thumbnail',
-      'excerpt',
-      'custom-fields',
-      'comments',
-      'categories'
-    ),
-    'public' => true,
-    'has_archive' => true,
-    'show_in_rest' => true,
-  )
-);
-//管理画面の「代表作品」にカテゴリー項目を追加
-register_taxonomy('pickup_category', array('pick'), array(  //左タクソノミー名、右カスタム投稿名
-  'hierarchical' => true,
-  'label' => 'カテゴリー',   //管理画面 カテゴリー項目名を変える
-  'show_ui' => true,
-  'public' => true
-));
-// カスタムタクソノミー（タグ）の登録
-register_taxonomy('pickup_tag', 'pick', array(
-  'hierarchical' => false,  // タグは階層を持たないので false
-  'label' => 'タグ',         // 管理画面のタグ項目名
-  'show_ui' => true,
-  'public' => true,
-  'show_in_rest' => true,    // Gutenbergエディタでの表示を有効にする
-));
