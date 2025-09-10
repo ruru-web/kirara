@@ -167,25 +167,34 @@
   }
 }
 
-.confirm_area-top h2 {
+.confirm_area-top h2,
+.thanks_area h2 {
   font-size: rem(24);
   color: $black;
   font-family: $base-font;
   font-weight: $bold;
   line-height: calc(24 / 24);
   letter-spacing: 0em;
+  width: fit-content;
+  margin-inline: auto;
   @include mq("md") {
   }
 }
 
-.confirm_area-top p {
+.confirm_area-top p,
+.thanks_area p {
+  display: block;
   margin-top: rem(8);
   color: $black;
   font-size: rem(16);
   font-family: $base-font;
   font-weight: $regular;
-  line-height: calc(16 / 16);
+  line-height: calc(1.5 / 1);
   letter-spacing: 0em;
+  width: fit-content;
+  margin-inline: auto;
   @include mq("md") {
+    margin-top: rem(16);
+    font-size: rem(14);
   }
 }

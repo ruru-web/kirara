@@ -8,11 +8,11 @@
 		<div class="top-mv__container">
 			<picture>
 				<!-- PCサイズ（768px以上） -->
-				<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/common/mv.png"
-					media="(min-width: 768px)">
+				<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/common/mv.webp"
+					media="(min-width: 768px)" width="2114" height="1409">
 
 				<!-- SPサイズ（768px未満） -->
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/mv-sp.png" alt="ランドセルを背負って走る子ども">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/mv-sp.webp" alt="お子様が自分で踏み出す「一歩」のお手伝いをします" width="2470" height="2142">
 			</picture>
 
 			<h2 class="top-mv__title">
@@ -33,11 +33,11 @@
 			<div class="top-worries__image">
 				<picture>
 					<!-- PCサイズ（768px以上） -->
-					<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/common/worries.png"
-						media="(min-width: 768px)">
+					<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/common/worries.webp"
+						media="(min-width: 768px)" width="1046" height="776">
 
 					<!-- SPサイズ（768px未満） -->
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/worries-sp.png" alt="不安の症例8つ">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/worries-sp.webp" alt="お子様にこんな不安はありませんか？ 不安の症例8つ" width="344" height="355">
 				</picture>
 
 			</div>
@@ -66,8 +66,8 @@
 							ご家族のサポートを行います。
 						</p>
 						<div class="top-about__image">
-							<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/about.jpg'); ?>"
-								alt="遊んでいる子どもたち">
+							<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/about.webp'); ?>"
+								alt="遊んでいる子どもたち" width="580" height="352">
 						</div>
 					</div>
 
@@ -80,11 +80,11 @@
 						<?php
 						// 全ての画像アイテムを一つの配列にまとめる
 						$support_items = [
-							['src' => 'about1.png', 'alt' => '健康・生活'],
-							['src' => 'about2.png', 'alt' => '運動・感覚'],
-							['src' => 'about3.png', 'alt' => '認知・行動'],
-							['src' => 'about4.png', 'alt' => '言語・コミュニケーション'],
-							['src' => 'about5.png', 'alt' => '人間関係・社会性'],
+							['src' => 'about1.webp', 'alt' => '健康・生活'],
+							['src' => 'about2.webp', 'alt' => '運動・感覚'],
+							['src' => 'about3.webp', 'alt' => '認知・行動'],
+							['src' => 'about4.webp', 'alt' => '言語・コミュニケーション'],
+							['src' => 'about5.webp', 'alt' => '人間関係・社会性'],
 						];
 
 						// ループで画像を出力
@@ -92,7 +92,7 @@
 						?>
 							<li class="top-about__support-item top-about__support-item--<?php echo $index + 1; ?>">
 								<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/' . $item['src']); ?>"
-									alt="<?php echo esc_attr($item['alt']); ?>">
+									alt="<?php echo esc_attr($item['alt']); ?>" width="196" height="196">
 							</li>
 						<?php endforeach; ?>
 					</ul>
@@ -122,24 +122,24 @@
 			<!-- 吹き出し -->
 			<div class="top-features__bubble">
 				<div class="top-features__bubble-item top-features__bubble--learn  js-bubble-animation">
-					<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/features1.png'); ?>"
-						alt="学ぶ" class="js-fade-slide">
+					<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/features1.webp'); ?>"
+						alt="学ぶ" class="js-fade-slide" width="173" height="195">
 				</div>
 				<div class="top-features__bubble-item top-features__bubble--eat  js-bubble-animation">
-					<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/features2.png'); ?>"
-						alt="食べる" class="js-fade-slide">
+					<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/features2.webp'); ?>"
+						alt="食べる" class="js-fade-slide" width="173" height="225">
 				</div>
 				<div class="top-features__bubble-item top-features__bubble--use  js-bubble-animation">
-					<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/features3.png'); ?>"
-						alt="活かす" class="js-fade-slide">
+					<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/features3.webp'); ?>"
+						alt="活かす" class="js-fade-slide" width="185" height="180">
 				</div>
 
 			</div>
 
 			<!-- 星の画像 -->
 			<div class="top-features__image js-floating">
-				<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/star.png'); ?>"
-					alt="星のキャラクター">
+				<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/star.webp'); ?>"
+					alt="星のキャラクター" width="354" height="415">
 
 			</div>
 
@@ -148,8 +148,8 @@
 				<div class="features-cards__item features-card">
 					<div class="features-card__image">
 						<img
-							src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/features-card1.jpg'); ?>"
-							alt="地図を囲んで勉強している子どもたち">
+							src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/features-card1.webp'); ?>"
+							alt="地図を囲んで勉強している子どもたち" width="302" height="302">
 					</div>
 					<div class="features-card__wrap">
 						<div class="features-card__number">1</div>
@@ -177,8 +177,8 @@
 				<div class="features-cards__item features-card">
 					<div class="features-card__image">
 						<img
-							src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/features-card2.jpg'); ?>"
-							alt="お弁当箱の前で手を合わせている子どもたち">
+							src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/features-card2.webp'); ?>"
+							alt="お弁当箱の前で手を合わせている子どもたち" width="302" height="302">
 					</div>
 					<div class="features-card__wrap">
 						<div class="features-card__number">2</div>
@@ -203,8 +203,8 @@
 				<div class="features-cards__item features-card">
 					<div class="features-card__image">
 						<img
-							src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/features-card3.jpg'); ?>"
-							alt="パソコンで学習する女の子">
+							src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/features-card3.webp'); ?>"
+							alt="パソコンで学習する女の子" width="302" height="302">
 					</div>
 					<div class="features-card__wrap">
 						<div class="features-card__number">3</div>
@@ -327,21 +327,13 @@
 
 		<div class="top-facility__photo">
 			<div class="top-facility__image">
-				<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/photo1.jpg'); ?>"
-					alt="外観の写真">
+				<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/photo1.webp'); ?>"
+					alt="外観の写真" width="411" height="257">
 			</div>
 			<div class="top-facility__image">
-				<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/photo2.jpg'); ?>"
-					alt="室内の写真">
+				<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/photo2.webp'); ?>"
+					alt="室内の写真" width="411" height="257">
 			</div>
-			<!-- <div class="top-facility__image">
-				<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/sample.jpg'); ?>"
-					alt="施設の写真">
-			</div>
-			<div class="top-facility__image">
-				<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/sample.jpg'); ?>"
-					alt="施設の写真">
-			</div> -->
 		</div>
 
 		<div class="top-facility__inner inner">
@@ -383,7 +375,7 @@
 
 					<div class="top-access__logo">
 						<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/logo-name.svg'); ?>"
-							alt="kid's キララ">
+							alt="kid's キララ" width="348" height="86">
 					</div>
 					<p class="top-access__address">
 						宮崎市浮田１０３２－１<br>
@@ -408,7 +400,7 @@
 
 				</div>
 				<div class="top-access__image">
-					<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/access1.jpg'); ?>"
+					<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/access1.webp'); ?>"
 						alt="キララの施設写真">
 				</div>
 
