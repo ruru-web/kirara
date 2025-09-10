@@ -247,31 +247,100 @@
 				<ul class="top-guide__items guide-list">
 					<li class="guide-list__item guide-item">
 						<h4 class="guide-item__title">ご利用方法</h4>
-						<p class="guide-item__text">
-							テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+						<div class="guide-item__image guide-item__wrap">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/guide1.png' ); ?>"
+								alt="ご利用方法の流れ">
 
-						</p>
+						</div>
 
 					</li>
+
 					<li class="guide-list__item guide-item">
 						<h4 class="guide-item__title">料金</h4>
-						<p class="guide-item__text">
-							テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-						</p>
 
-					</li>
-					<li class="guide-list__item guide-item">
-						<h4 class="guide-item__title">入所の流れ</h4>
-						<p class="guide-item__text">
-							テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-						</p>
+						<div class="guide-item__charges charge-list guide-item__wrap">
+							<!-- 1つ目のカード -->
+							<div class="charge-list__item charge-item">
+								<p class="charge-item__label">生活保護受給世帯・<br class="u-mobile"> 市町村民税非課税世帯</p>
+								<div class=" charge-item__info">
+									<p class="charge-item__price-label">負担上限月額</p>
+									<div class="charge-item__amount">
+										<span class="charge-item__price charge-item__price--free">0</span>
+										<span class="charge-item__yen">円</span>
+									</div>
+								</div>
+							</div>
 
+							<!-- 2つ目のカード -->
+							<div class=" charge-list__item charge-item">
+								<p class="charge-item__label">市町村民税課税世帯
+									<span class="charge-item__note">（前年の所得約890万円までの世帯）
+									</span>
+								</p>
+								<div class="charge-item__info">
+									<p class="charge-item__price-label">負担上限月額</p>
+									<div class="charge-item__amount">
+										<span class=" charge-item__price">4,600</span>
+										<span class="charge-item__yen">円</span>
+									</div>
+								</div>
+							</div>
+
+							<!-- 3つ目のカード -->
+							<div class=" charge-list__item charge-item">
+								<p class="charge-item__label">市町村民税課税世帯
+									<span class="charge-item__note">（前年度の年間所得890万円以上の世帯）
+									</span>
+								</p>
+								<div class="charge-item__info">
+									<p class="charge-item__price-label">負担上限月額</p>
+									<div class="charge-item__amount">
+										<span class=" charge-item__price">37,200</span>
+										<span class="charge-item__yen">円</span>
+									</div>
+								</div>
+							</div>
+						</div>
 					</li>
+					<li class="guide-list__item guide-item guide-item__price">
+						<h4 class="guide-item__title">その他費用</h4>
+
+						<ul class="guide-item__costs other-costs guide-item__wrap">
+							<li class="other-costs__item">
+								<span class="other-costs__icon"></span>
+								<div class="other-costs__label">おやつ代</div>
+								<div class="other-costs__value">100円</div>
+							</li>
+							<li class="other-costs__item">
+								<span class="other-costs__icon"></span>
+								<div class="other-costs__label">給食代</div>
+								<div class="other-costs__value">
+									<div class="other-costs__detail">
+										<div class="other-costs__line">
+											<span class="other-costs__year">小1〜3</span>
+											<span class="other-costs__price">400円</span>
+										</div>
+										<div class="other-costs__line">
+											<span class="other-costs__year">小4〜</span>
+											<span class=" other-costs__price">500円</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class=" other-costs__item">
+								<span class="other-costs__icon"></span>
+								<div class="other-costs__label">工作費用</div>
+								<div class="other-costs__value"></div>
+							</li>
+
+						</ul>
+					</li>
+
 				</ul>
-
 			</div>
 
 		</div>
+
 	</section>
 
 	<section class="top-facility top-facility-layout">

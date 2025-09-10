@@ -1,0 +1,79 @@
+@use "global" as *;
+
+.other-costs {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+}
+
+.other-costs__item {
+  display: grid;
+  grid-template-columns: rem(32) rem(120) 1fr;
+  // align-items: start;
+  // gap: rem(12);
+  color: $gray3;
+
+  @include mq("md") {
+    grid-template-columns: rem(20) rem(120) 1fr;
+  }
+}
+
+.other-costs__icon {
+  width: rem(32);
+  height: rem(32);
+  border-radius: 50%;
+  background-color: $blue4;
+
+  @include mq("md") {
+    width: rem(20);
+    height: rem(20);
+  }
+}
+
+.other-costs__label {
+  margin-left: rem(15);
+  font-size: rem(25);
+  line-height: calc(36 / 25);
+  font-weight: $bold;
+  letter-spacing: -0.04em;
+
+  @include mq("md") {
+    font-size: rem(18);
+  }
+}
+
+.other-costs__value {
+  margin-left: rem(47);
+  font-size: rem(29);
+  line-height: calc(36 / 29);
+  font-weight: $bold;
+  letter-spacing: -0.04em;
+
+  @include mq("md") {
+    font-size: rem(20);
+  }
+}
+
+.other-costs__detail {
+  display: flex;
+  flex-direction: column;
+  gap: rem(4);
+}
+
+.other-costs__line {
+  display: flex;
+  gap: rem(16);
+  // justify-content: space-between;
+  // font-size: rem(29);
+  // line-height: calc(36/29);
+}
+
+.other-costs__year {
+  display: block;
+  max-width: rem(100);
+  width: 100%;
+}
+
+.other-costs__price {
+  flex: 1;
+}

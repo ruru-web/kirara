@@ -1,0 +1,7 @@
+@use 'global' as *;
+
+.charge-list {
+	display: flex;
+	flex-direction: column;
+	gap: rem(16);
+}
