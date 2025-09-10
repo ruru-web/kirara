@@ -3,7 +3,8 @@
 .guide-list {
   display: flex;
   flex-direction: column;
-  // gap: rem(45);
+  max-width: rem(1141);
+  margin-inline: auto;
 }
 
 .guide-list__item {

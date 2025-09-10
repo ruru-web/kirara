@@ -12,7 +12,8 @@
 					media="(min-width: 768px)" width="2114" height="1409">
 
 				<!-- SPサイズ（768px未満） -->
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/mv-sp.webp" alt="お子様が自分で踏み出す「一歩」のお手伝いをします" width="2470" height="2142">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/mv-sp.webp"
+					alt="お子様が自分で踏み出す「一歩」のお手伝いをします" width="2470" height="2142">
 			</picture>
 
 			<h2 class="top-mv__title">
@@ -37,7 +38,8 @@
 						media="(min-width: 768px)" width="1046" height="776">
 
 					<!-- SPサイズ（768px未満） -->
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/worries-sp.webp" alt="お子様にこんな不安はありませんか？ 不安の症例8つ" width="344" height="355">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/worries-sp.webp"
+						alt="お子様にこんな不安はありませんか？ 不安の症例8つ" width="344" height="355">
 				</picture>
 
 			</div>
@@ -90,10 +92,10 @@
 						// ループで画像を出力
 						foreach ($support_items as $index => $item) :
 						?>
-							<li class="top-about__support-item top-about__support-item--<?php echo $index + 1; ?>">
-								<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/' . $item['src']); ?>"
-									alt="<?php echo esc_attr($item['alt']); ?>" width="196" height="196">
-							</li>
+						<li class="top-about__support-item top-about__support-item--<?php echo $index + 1; ?>">
+							<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/common/' . $item['src']); ?>"
+								alt="<?php echo esc_attr($item['alt']); ?>" width="196" height="196">
+						</li>
 						<?php endforeach; ?>
 					</ul>
 
@@ -248,9 +250,15 @@
 					<li class="guide-list__item guide-item">
 						<h4 class="guide-item__title">ご利用方法</h4>
 						<div class="guide-item__image guide-item__wrap">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/common/guide1.png' ); ?>"
-								alt="ご利用方法の流れ">
+							<picture>
+								<!-- PCサイズ（768px以上） -->
+								<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/common/guide.webp"
+									media="(min-width: 768px)" width="2114" height="1409">
 
+								<!-- SPサイズ（768px未満） -->
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/guide-sp.webp" alt="ご利用方法の流れ"
+									width="2470" height="2142">
+							</picture>
 						</div>
 
 					</li>
@@ -307,28 +315,28 @@
 
 						<ul class="guide-item__costs other-costs guide-item__wrap">
 							<li class="other-costs__item">
-								<span class="other-costs__icon"></span>
+								<!-- <span class="other-costs__icon"></span> -->
 								<div class="other-costs__label">おやつ代</div>
 								<div class="other-costs__value">100円</div>
 							</li>
 							<li class="other-costs__item">
-								<span class="other-costs__icon"></span>
+								<!-- <span class="other-costs__icon"></span> -->
 								<div class="other-costs__label">給食代</div>
 								<div class="other-costs__value">
 									<div class="other-costs__detail">
 										<div class="other-costs__line">
-											<span class="other-costs__year">小1〜3</span>
+											<span class="other-costs__year">小１〜３</span>
 											<span class="other-costs__price">400円</span>
 										</div>
 										<div class="other-costs__line">
-											<span class="other-costs__year">小4〜</span>
+											<span class="other-costs__year">小４〜</span>
 											<span class=" other-costs__price">500円</span>
 										</div>
 									</div>
 								</div>
 							</li>
 							<li class=" other-costs__item">
-								<span class="other-costs__icon"></span>
+								<!-- <span class="other-costs__icon"></span> -->
 								<div class="other-costs__label">工作費用</div>
 								<div class="other-costs__value"></div>
 							</li>
@@ -421,7 +429,7 @@
 						</a>
 					</div>
 					<div class="top-facility__contact-button">
-						<a href="#">お問い合わせ</a>
+						<a href="#contact">お問い合わせ</a>
 					</div>
 				</div>
 			</div>
@@ -478,7 +486,7 @@
 	</section>
 
 
-	<section class="contact">
+	<section class="contact" id="contact">
 		<div class="contact__inner inner">
 			<h2 class="contact__title section-title">お問い合わせ</h2>
 			<p class="contact__text">
