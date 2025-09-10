@@ -12,26 +12,53 @@
 .guide-item__price {
   position: relative;
   padding-bottom: rem(50);
+
+  @include mq("md") {
+    padding-bottom: rem(30);
+  }
+}
+
+.guide-item__price::before,
+.guide-item__price::after {
+ content: "";
+  position: absolute;
+  // top: -10px; /* 固定値 */
+  // left: 50%;
+  transform: translateX(-50%);
+  background-color: $gray3
 }
 
 .guide-item__price::before {
-  content: "";
-  position: absolute;
+  // content: "";
+  // position: absolute;
   top: -15%;
-  left: 45.3%;
+  // top: rem(-30);
+  // left: 45.3%;
+  left: 50%;
   width: rem(52);
   height: rem(18);
-  background-color: $gray3;
+  // background-color: $gray3;
+
+  // @include mq("md") {
+  //   top: -13.3%;
+  //   left: 43.8%;
+  // }
 }
 
 .guide-item__price::after {
-  content: "";
-  position: absolute;
+  // content: "";
+  // position: absolute;
   top: -20%;
-  left: 46.8%;
+  // top: rem(-40);
+  // left: 46.8%;
+  left: 50%;
   width: rem(18);
   height: rem(52);
-  background-color: $gray3;
+  // background-color: $gray3;
+
+  // @include mq("md") {
+  //   top: -18%;
+  // }
 }
 
 .guide-item__title {
@@ -55,12 +82,16 @@
 }
 
 .guide-item__image {
-  max-width: rem(1097);
+  width: 100%;
 }
 
 .guide-item__image img {
   aspect-ratio: 1097/247;
   object-fit: contain;
+
+  @include mq("md") {
+    aspect-ratio: 904/828;
+  }
 }
 
 .guide-item__text {

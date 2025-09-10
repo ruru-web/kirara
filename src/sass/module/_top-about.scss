@@ -99,15 +99,12 @@
   gap: rem(18);
 
   @include mq("md") {
-    // flex-direction: column;
     padding-right: 0;
     flex-wrap: wrap;
   }
 }
 
 .top-about__support-item {
-  // width: rem(196);
-  // height: rem(196);
   border-radius: 50%;
   overflow: hidden;
   text-align: center;
